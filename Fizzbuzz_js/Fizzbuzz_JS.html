@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    
+    <title>FizzBuzz</title>
+    
+    <script> 
+        
+  
+    </script>
+           
+
+  </head>
+  
+  <body>
+    <div class="container">
+    
+      <h1> Let's Get FizzBuzzing! </h1>
+      
+
+
+<input type="button" onclick="start_fizzbuzz()" value="FizzerBuzzer">
+        
+<script>
+             function start_fizzbuzz()
+                  {
+                  var x="<br />";
+                  var num=prompt("Please enter a number","Fizz or Buzz?");
+                    if (num!=null && num!="")
+                        { 
+                      
+                        for (var i=1;i<= num; i++) 
+                        {
+                          if (i%3==0 && i%5==0)
+                              {
+                                x = x + "FizzBuzz <br />";
+                               }
+                              else if (i % 5 == 0)
+                              {
+                                x = x + "buzz <br />";
+                              }
+                              else if (i % 3 == 0)
+                              {
+                                x = x + "fizz <br />";
+                              }
+                              else
+                              {
+                                x = x + i + "<br />";
+                              }
+                        document.getElementById("solution").innerHTML=x;
+                          
+
+                        }
+                           
+                    
+                        }
+                   }
+             
+
+</script>
+
+<p id="solution"></p>
+
+        
+        
+ 
+    </div>
+
+    
+  </body>
+</html>
+</html>
